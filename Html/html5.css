@@ -1,0 +1,127 @@
+/*
+COMENTAR 
+# llama a los id
+. llama a los class
+x[] llama a los name
+*/
+
+/*LLAMAR UNA ETIQUETA*/
+.uno{
+    /* AGREGAR COLOR*/
+    color:green;
+    /* TAMAÑO DE LETRA*/
+    font-size: 20px;
+}
+.dos{
+    color: grey;
+}
+p a{
+    color: hotpink;
+    font-size: 30px;
+}
+h1.c{
+    color: indigo;
+}
+/* ESTA ETIQUETA BUSCA TODOS LOS NOMBRES QUE TENGA "TRE" */
+p[name*="tre"]{
+    color: lawngreen;
+}
+/* ESTA ETIQUETA CONVIERTE LA CLASE "TREX" EN LO QUE SE DESIGNE */
+p[name$="trex"]{
+    color: lightseagreen;
+}
+
+body{
+    background: moccasin;
+    /* MARGEN DE LA PÁGINA */
+    margin: 100px;
+}
+#a1,#a2{
+    box-shadow: 25px 10px 20px white;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px 90px 8px 10px;
+    /* ALINEAR DIVS */
+    float: left;
+    width: 30%;
+    margin: 4%;
+    transform: rotate(0deg);
+    margin-top: 20px;
+
+
+
+
+}
+#a1{
+    background-color: lightskyblue;
+    /* BORDE DEL DIV*/
+    margin-right: 5%;  
+    margin-left: 10%;  
+}
+#a2{
+    background-color: limegreen;
+    margin-left: 5%;    
+}
+
+.contenedor{
+    margin-top: 30%    ;
+    margin-left: 30%;
+    perspective: 2000px;
+}
+.cubo{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style:preserve-3d ;
+    animation: rotar 5s infinite linear;
+}
+
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+.cara{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    perspective-origin: 20px 15px 30px;
+
+}
+#cara1{
+    background: white;
+    transform: translatez(100px);
+}
+#cara2{
+    background: green;
+    transform: translatex(100px) rotateY(90deg);
+}
+#cara3{
+    background: violet;
+    transform: translatez(-100px);
+}
+#cara4{
+    background: yellow;
+    transform: translateX(-100px) rotateY(90deg);
+}
+#cara5{
+    background: red;
+    transform: translateY(-100px) rotateX(90deg);
+}
+#cara6{
+    background: blue;
+    transform: translateY(100px) rotateX(90deg);
+}
+
+
+
+
+
+
+
+
+
+
