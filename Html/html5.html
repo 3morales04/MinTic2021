@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- ETIQUETA PARA ENLAZAR HTML/CSS -->
+    <link rel="stylesheet" href="html5.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo</title>
+    
+</head>
+
+<body>
+    <!--PARA COMENTAR-->
+    java<br>html<br>css<br>c++<br>tuby
+    <!-- PÁRRAFOS -->
+    <p>esto<em> es</em> un <strong>párrafo</strong></p>
+    <!-- ESTILO -->
+    <p style="color:blue;">Fuentes y estilo</p>
+    <!-- Fuentes-->
+    <h1>hola</h1>
+    <h2>hola</h2>
+    <h3>hola</h3>
+    <h4>hola</h4>
+    <h5>hola</h5>
+    <h6>hola</h6>
+    <!-- VÍNCULO-->
+    <a href="https://virtual.upb.edu.co">este es mi vínculo</a><br />
+    <!-- VÍNCULO EN OTRA PESTAÑA -->
+    <a href="https://virtual.upb.edu.co" target="_blank">este es mi vínculo</a>
+    <!-- imagen -->
+    <br>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Color_circle_%28hue-sat%29.png" alt=""
+        style="width: 200px;" />
+    <a href="https://upload.wikimedia.org/wikipedia/commons/5/51/Color_circle_%28hue-sat%29.png"><img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/51/Color_circle_%28hue-sat%29.png"
+            alt="paleta de colores" style="width: 20px;" /></a>
+
+    <!-- LISTAS ORDENADAS -->
+    <ol>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ol>
+    <br>
+    <!-- LISTAS NO ORDENADAS -->
+    <ul>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ul>
+    <br>
+    <!-- LISTA DE DEFINICIONES-->
+    <dl>
+        <dt><strong>
+                <h2>Imagen</h2>
+            </strong>
+        <dd>Es una representación de la realidad<br><img src="
+            https://alponiente.com/wp-content/uploads/2015/07/palabra2.jpg" alt="" style="width:50%;"></dd>
+        </dt>
+    </dl>
+
+
+    <ol>
+        <li>Colombia
+            <ul>
+                <li>Cundinamarca</li>
+                <li>Antioquia</li>
+                <li>Guajira</li>
+            </ul>
+        </li>
+        <li>Argentina
+            <ul>
+                <li>Mar del plata</li>
+                <li>Jojui</li>
+                <li>Patagonia</li>
+            </ul>
+        </li>
+    </ol>
+    <br>
+
+    <ol>
+        <li>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </li>
+    </ol>
+    <br>
+    <!-- CREAR BOTONES -->
+    <form action="pagina x" method="=post">
+        <p>Ingrese su nombre: </p>
+        <input type="text" name="texto" size="20" />
+        <p>Ingrese su contraseña: </p>
+        <input type="password" name="contraseña" size="20" /><br><br>
+        <p>Ingrese su queja: </p>
+        <textarea name="quejas" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Borrar" />
+        <br>
+        <br>
+        <!-- MÚLTIPLE ELECCIÓN -->
+        <input type="checkbox" />java<br />
+        <input type="radio" />java<br />
+        <input type="checkbox" />java<br />
+        <br>
+        <!--- LISTA DESPEGABLE -->
+        <select name="Ciudades" id="">
+
+            <option>Armenia</option>
+            <option>Bogotá</option>
+            <option>Medellín</option>
+            <option>Cartagena</option>
+            <option>Cali</option>
+        </select>
+        <p>Presione Ctrl para seleccionar varios</p>
+        <select name="Ciudades[]" id="" multiple>
+            <option>Armenia</option>
+            <option>Bogotá</option>
+            <option>Medellín</option>
+            <option>Cartagena</option>
+            <option>Cali</option>
+        </select>
+        <!-- AGRUPAR POR NIVELES -->
+        <select name="articulos" id="" multiple>
+            <optgroup label="Herramientas">
+                <option>Armenia</option>
+                <option>Bogotá</option>
+                <option>Medellín</option>
+            </optgroup>
+            <optgroup label="Prendas">
+                <option>Cartagena</option>
+                <option>Cali</option>
+            </optgroup>
+        </select>
+    </form>
+    <br>
+    <form action="#">
+        <input type="text" placeholder="ingrese solo números" required>
+        <!-- Required pide llenar el espacio-->
+        <input type="text" placeholder="contraseña" required>
+        <br>
+        <input type="email" placeholder="Ingrese su correo electrónico" required>
+        <br>
+        <!-- BARRA PARA SABER EL AVANCE SE MUEVE-->
+        <input type="range">
+        <br>
+        <!-- BOTÓN DE ENVIAR -->
+        <input type="submit">
+        <br>
+        <!-- FECHA CALENDARIO -->
+        <input type="date">
+        <br>
+        <!-- PALETA DE COLORES -->
+        <input type="color">
+
+        <br>
+        <!-- ESCOGER NÚMEROS SALEN NÚMEROS -->
+        <input type="number" min="1" max="10">
+
+        <br>
+        <P>ESTABLECER LA CANTIDAD DE LETRAS QUE PUEDE INGRESAR MÁXIMAS</P>
+        <!-- ESTABLECER LA CANTIDAD DE LETRAS QUE PUEDE INGRESAR -->
+        <input type="text" maxlength="7">
+
+        <br>
+        <P> ESTABLECER LA CANTIDAD DE LETRAS QUE PUEDE INGRESAR MIN Y MAX</P>
+        <!-- ESTABLECER LA CANTIDAD DE LETRAS QUE PUEDE INGRESAR -->
+        <input type="text" minlength="4" maxlength="7" required>
+
+        <br>
+        <P>LISTA DESPEGABLE CON BUSCADOR</P>
+        <!-- LISTA DESPEGABLE CON BUSCADOR-->
+        <input type="text" list="cosas" placeholder="Cosas">
+        <datalist id="cosas">
+            <option value="cosa 1"></option>
+            <option value="cosa 2"></option>
+            <option value="cosa 3"></option>
+            <option value="cosa 4"></option>
+        </datalist>
+
+        <br>
+        <p>INSERTAR IMAGEN</p>
+        <!--INSERTAR IMAGEN-->
+        <input type="file" required>
+
+        <br>
+        <p>RECUADRO GRANDE</p>
+        <!-- RECUADRO GRANDE/ WIDTH ES CSS -->
+        <fieldset style="width: 200px;">
+            <!-- TEXTO ENTRE EL RECUADRO -->
+            <legend> TEXTO EN EL RECUADRO</legend>
+            <input type="text" placeholder="ingrese solo números" required>
+            <br>
+            <input type="range">
+            <br>
+            <input type="date">
+        </fieldset>
+
+    </form>
+    <br>
+    <!-- INSERTAR AUDIO SRC= RUTA DEL AUDIO 
+    <p>AUDIO</p>
+    <audio src="xyz.mp3" controls>
+    </audio><br>-->
+    <!-- INSERTAR VIDEO SRC= RUTA DEL VIDEO 
+    <p>VIDEO</p>
+    <video src="teresa.mp4" width="400px" controls></video>-->
+    <!-- IFRAME INSERTAR MAPA O VIDEO 
+    <p>IFRAME MAPA O ALGÚN VÍDEO</p>
+    <iframe id="inlineFrameExample" title="Inline Frame Example" width="300" height="200"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+    </iframe>-->
+    <br>
+    <br>
+
+    <header><h1>Titulos</h1> 
+    <!-- INSERTAR LINKS-->
+    <nav><a href="">ggg</a><a href="">ggg</a></nav>
+    </header>
+
+    <br>
+    <section>Presentación</section>
+    <section>Nosotros</section>
+    <section>Nuestra oferta</section>
+    <section>Contáctenos</section>
+
+    <br>
+    <!-- PIE DE PÁGINA-->
+    <p><h2>PIE DE PÁGINA</h2></p>
+    <footer><p>copyrihg-fecha-correo</p>
+    </footer>
+
+    <br>
+    <aside>
+    <p>NOTAS, ESTILOS, TIPOGRAFÍAS, PUBLICIDAD</p>
+    </aside>
+
+    <h1>FORMACIÓN DE UNA PÁGINA</h1>
+    <br>
+    <header>
+        <h2>Encabezado de la página</h2>
+    </header>
+    <nav>
+        <p>Enlaces de la página</p>
+    </nav>
+
+    <section>
+        <p>Sección 1</p>
+    </section>
+    <section>
+        <p>Sección 2</p>
+    </section>
+    <section>
+        <p>Sección 3</p>
+    </section>
+
+    <aside>
+        <p>Publicidad</p>
+    </aside>
+
+    <footer>
+        <p>Pie de página</p>
+    </footer>
+
+
+
+
+</body>
+
+</html>
